@@ -1,3 +1,6 @@
 title: بهساز ماشین
 top_slogan: تولید کننده انواع سیستم های شست و شوی صنعتی
 logo: /assets/images/123.svg
+baseurl: "/man"       # اسم فولدر پروژه توی GitHub
+url: "https://hadilaptop.github.io"
+
