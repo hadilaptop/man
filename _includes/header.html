@@ -1,0 +1,60 @@
+<header class="site-header">
+
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <p class="desktop-text">
+                {{ site.top_slogan }}
+            </p>
+
+            <div class="social-icons">
+                {% for item in site.data.socials %}
+                    <a href="{{ item.link }}" title="{{ item.title }}" target="_blank">
+                        {% if item.icon %}
+                            <i class="{{ item.icon }}"></i>
+                        {% else %}
+                            <img src="{{ item.image }}" alt="{{ item.title }}">
+                        {% endif %}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+
+        <a href="/" class="logo-container">
+            <img src="{{ site.logo }}" alt="{{ site.title }}" class="logo-img">
+        </a>
+
+        <ul class="nav-list">
+            {% for item in site.data.menu %}
+                <li class="nav-item {% if item.children %}has-dropdown{% endif %}">
+                    <a href="{{ item.link }}" class="nav-link">{{ item.title }}</a>
+
+                    {% if item.children %}
+                        <ul class="dropdown-menu">
+                            {% for child in item.children %}
+                                <li><a href="{{ child.link }}">{{ child.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <div class="left-actions">
+            <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="mobile-slogan-bar">
+        <p>{{ site.top_slogan }}</p>
+    </div>
+
+</header>

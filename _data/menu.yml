@@ -1,0 +1,15 @@
+- title: صفحه اصلی
+  link: /
+
+- title: خرید دستگاه قطعه شویی
+  link: "#"
+  children:
+    - title: دستگاه سبک
+      link: "#"
+    - title: دستگاه سنگین
+      link: "#"
+    - title: دستگاه فوق سنگین
+      link: "#"
+
+- title: تماس با ما
+  link: /contact
