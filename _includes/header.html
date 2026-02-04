@@ -8,11 +8,11 @@
 
             <div class="social-icons">
                 {% for item in site.data.socials %}
-                    <a href="{{ item.link }}" title="{{ item.title }}" target="_blank">
+                    <a href="{{ item.link | relative_url }}" title="{{ item.title }}" target="_blank">
                         {% if item.icon %}
                             <i class="{{ item.icon }}"></i>
                         {% else %}
-                            <img src="{{ item.image }}" alt="{{ item.title }}">
+                            <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
                         {% endif %}
                     </a>
                 {% endfor %}
@@ -22,19 +22,19 @@
 
     <nav class="main-nav">
 
-        <a href="/" class="logo-container">
-            <img src="{{ site.logo }}" alt="{{ site.title }}" class="logo-img">
+        <a href="{{ '/' | relative_url }}" class="logo-container">
+            <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" class="logo-img">
         </a>
 
         <ul class="nav-list">
             {% for item in site.data.menu %}
                 <li class="nav-item {% if item.children %}has-dropdown{% endif %}">
-                    <a href="{{ item.link }}" class="nav-link">{{ item.title }}</a>
+                    <a href="{{ item.link | relative_url }}" class="nav-link">{{ item.title }}</a>
 
                     {% if item.children %}
                         <ul class="dropdown-menu">
                             {% for child in item.children %}
-                                <li><a href="{{ child.link }}">{{ child.title }}</a></li>
+                                <li><a href="{{ child.link | relative_url }}">{{ child.title }}</a></li>
                             {% endfor %}
                         </ul>
                     {% endif %}
