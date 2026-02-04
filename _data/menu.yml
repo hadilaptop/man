@@ -11,5 +11,16 @@
     - title: دستگاه فوق سنگین
       link: "#"
 
+- title: فروش شرایطی 
+  link: "#"
+  children:
+    - title: دستگاه سبک
+      link: "#"
+    - title: دستگاه سنگین
+      link: "#"
+    - title: دستگاه فوق سنگین
+      link: "#"
+
 - title: تماس با ما
   link: contact
+
