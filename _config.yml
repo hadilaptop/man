@@ -1,7 +1,23 @@
+title: "مکعب طلایی"
+description: "وبسایت شخصی - کارتن‌سازی مکعب طلایی"
+author: "Hadilaptop"
+baseurl: ""
+url: "https://hadilaptop.github.io/man"
 
-title: بهساز ماشین
-top_slogan: تولید کننده انواع سیستم های شست و شوی صنعتی
-# اصلاح خط زیر: اسلش اول را بردار
-logo: assets/images/123.svg
-baseurl: "/man"
-url: "https://hadilaptop.github.io"
+# تم و استایل
+theme: null
+markdown: kramdown
+
+# رنگ‌های تم آبی (برای استفاده در صورت نیاز)
+color:
+  primary: "#2c7ad0"
+  secondary: "#1a5a9c"
+  light: "#e8f1fa"
+  dark: "#0a4c7a"
+
+# ساختار
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
