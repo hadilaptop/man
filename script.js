@@ -538,9 +538,9 @@ document.getElementById('saveAsImageBtn').addEventListener('click', saveAsImage)
 // ==================== تنظیمات سیستم (ذخیره اطلاعات و تم) ====================
 const defaultSettings = {
     theme: 'gold',
-    companyName: ' نام شرکت خود را وارد کنید ',
-    companyAddress: '  آدرس شرکت خود را وارد کنید ',
-    companyPhone: '۰۹۱۳۱۰۰۱۰۰۰'
+    companyName: ' کارتن سازی مکعب طلایی ',
+    companyAddress: ' اصفهان - اتوبان خاتون آبادب ',
+    companyPhone: ' 09134107656 '
 };
 
 let currentSettings = { ...defaultSettings };
